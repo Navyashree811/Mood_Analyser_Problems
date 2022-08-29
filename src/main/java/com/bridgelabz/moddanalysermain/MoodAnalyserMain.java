@@ -1,5 +1,5 @@
 /*
- * Refactor : Refactor the code to take the mood message in constructor. .
+ * UC 2 : Handle Exception if User Provides Invalid Mood.
  */
 package com.bridgelabz.moddanalysermain;
 
@@ -11,11 +11,14 @@ public class MoodAnalyserMain {
 	}
 
 	public String moodSad() {
-		if (message.contains("Sad")) {
-			return "SAD";
-		} else {
+		try {
+			if (message.contains("SSad")) {
+				return "SAD";
+			}
+		} catch (NullPointerException e) {
 			return "HAPPY";
 		}
+		return "HAPPY";
 	}
-	
+
 }
