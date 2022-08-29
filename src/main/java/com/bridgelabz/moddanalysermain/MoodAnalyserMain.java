@@ -1,5 +1,5 @@
 /*
- * TC : 1.2 : Given "I am in Any Mood" message should return Happy .
+ * Refactor : Refactor the code to take the mood message in constructor. .
  */
 package com.bridgelabz.moddanalysermain;
 
