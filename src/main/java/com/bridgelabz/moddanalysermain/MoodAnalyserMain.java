@@ -1,5 +1,5 @@
 /*
- * TC : 1.1 : Given "I am in Sad Mood" message should return SAD .
+ * TC : 1.2 : Given "I am in Any Mood" message should return Happy .
  */
 package com.bridgelabz.moddanalysermain;
 
@@ -17,4 +17,5 @@ public class MoodAnalyserMain {
 			return "HAPPY";
 		}
 	}
+	
 }
