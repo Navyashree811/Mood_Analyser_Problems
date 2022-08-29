@@ -1,7 +1,9 @@
 /*
- * UC 2 : Handle Exception if User Provides Invalid Mood.
+ * UC 3 : Inform user if entered Invalid Mood.
  */
 package com.bridgelabz.moddanalysermain;
+
+import com.bridgelabz.Exception.MoodAnalyserException;
 
 public class MoodAnalyserMain {
 	private String message;
@@ -10,15 +12,18 @@ public class MoodAnalyserMain {
 		this.message = message;
 	}
 
-	public String moodSad() {
+	public String analyseMood() throws MoodAnalyserException {
 		try {
-			if (message.contains("SSad")) {
+			if (message.contains("Sad")) {
 				return "SAD";
+			} else {
+				return "HAPPY";
 			}
 		} catch (NullPointerException e) {
-			return "HAPPY";
+			throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_NULL,
+					"Please enter proper message");
+
 		}
-		return "HAPPY";
 	}
 
 }
