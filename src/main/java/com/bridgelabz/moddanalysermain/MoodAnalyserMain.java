@@ -1,3 +1,6 @@
+/*
+ * TC : 1.1 : Given "I am in Sad Mood" message should return SAD .
+ */
 package com.bridgelabz.moddanalysermain;
 
 public class MoodAnalyserMain {
@@ -7,16 +10,8 @@ public class MoodAnalyserMain {
 		this.message = message;
 	}
 
-	public String moodHappy() {
-		if (message.contains("happy")) {
-			return "HAPPY";
-		} else {
-			return "SAD";
-		}
-	}
-
 	public String moodSad() {
-		if (message.contains("sad")) {
+		if (message.contains("Sad")) {
 			return "SAD";
 		} else {
 			return "HAPPY";
